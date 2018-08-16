@@ -1,4 +1,4 @@
-(def +version+ "0.0.1")
+  (def +version+ "0.0.1-0-SNAPSHOT")
 
 (set-env!
  :resource-paths #{"src"}
@@ -12,6 +12,8 @@
 
 (task-options!
  pom {:project 'org.clojars.borkdude/aristotle
-      :version +version+})
+      :version +version+
+      :scm {:url "https://github.com/borkdude/aristotle"}
+      })
 
 ;; install with  boot pom jar install
